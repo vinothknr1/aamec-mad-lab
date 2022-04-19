@@ -1,0 +1,4 @@
+INDEX VERSION 1.126+C:\Users\Administrator\Documents\working-folder\aamec-mad-lab\.metadata\.plugins\org.eclipse.jdt.core
+3228393691.index
+4050000334.index
+3126372376.index
