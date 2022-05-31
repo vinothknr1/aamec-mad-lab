@@ -1,4 +1,0 @@
-INDEX VERSION 1.126+Z:\aamec-mad-lab\.metadata\.plugins\org.eclipse.jdt.core
-4050000334.index
-924330630.index
-1149804849.index
