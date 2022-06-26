@@ -1,0 +1,287 @@
+EX NO 5: DEVELOP AN APPLICATION THAT MAKES USE OF NOTIFICATION MANAGER.
+
+protected void onCreate(Bundle savedInstanceState) {
+
+super on Create(savedInstanceState),
+
+setContentView(R.layout.activity_main);
+
+Button bb-(Button)findViewById (R.id.button1), bt.setOnClickListener(new OnClickListener()
+
+public void onClick(View argo)
+
+NotificationManager nm-(Notification Manager)getSy stanService(NOTIFICATION_SERVICE); Notification notification = new Notification (android R.drawable.stat_notify_mare, "you have got a new
+
+Message" System currentTimeMillis(),AMEC
+
+Context contextMainActivity.this,
+
+Intent intent new Intent(context,MainActivity.class),
+
+PendingIntent pending PendingIntent.getActivity (getApplication Context(),0, intent,0); notification.setLatestEventInfo(context, "email from FB","you have new friend request",pending); nm.notify (0.notification),
+
+}
+}};
+
+}
+
+
+
+
+
+
+NO 11:
+
+DEVELOP A MOBILE APPLICATION TO SEND AN EMAIL
+Activity_main.xml
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent" 
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin" 
+android:paddingLeft="@dimen/activity_horizontal_margin" 
+android:paddingRight="@dimen/activity_horizontal_margin" 
+android:paddingTop="@dimen/activity_vertical_margin" 
+tools:context=".MainActivity">
+
+<TextView
+
+android:id="@+id/textView!"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_alignParentLeft="true"
+android:layout_alignParentTop="true" 
+android:layout_marginLeft="17dp"
+android:layout_marginTop="29dp"
+android text "To"/>
+
+<TextView
+
+android:id="@+id/textView2"
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"
+android:layout_alignRight="@+id/textView1"
+android:layout below="@+id/textView!"
+android:layout_marginTop="18dp"
+android:text="Subject"/>
+
+<TextView
+
+android:id="@+id/textView3"
+
+android:layout_width="wrap_content"
+
+android:layout_height="wrap_content"
+
+android:layout_below="@+id/textView2"
+
+android:layout_marginTop="26dp"
+
+android:layout_toLeftOf="@+id/button1"
+
+android:text "Message"/>
+
+<EditText
+android:layout_height="wrap_content"
+
+android:layout_alignBaseline "@+id/textView3"
+
+android:layout_alignBottom="@+id/textView3" android:layout_alignParentRight="True"
+
+android:ems="10"/>
+
+<EditText
+
+android:id="@+id/editText1"
+
+android:layout_width="wrap_content"
+
+android:layout_height="wrap_content" 
+android:layout_above="@+id/textView2"
+
+android:layout_alignl.eft="@+id/edit Text2" 
+android:ems="10"/>
+
+<Button
+
+android:id="@+id/button1" 
+android:layout_width="wrap_content"
+
+android:layout_height="wrap_content" 
+android:layout_alignLeft="@+id/edit Text 3" 
+android:layout_below="@+id/textView3"
+
+android:layout_marginTop="74dp" 
+android:text "Send">
+
+<EditText
+
+android:id="@+id/editText2"
+
+android layout_width="wrap_content" android:layout_height="wrap_conte
+
+android layout alignBaseline="@+id/textView2"
+
+android layout alignBottom="@+id/textView?"
+
+android:layout_alignParentRight="true"
+
+android ems="10">
+
+<requestFocus/>
+
+<EditText>
+
+RelativeLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+
+android:layout_width="match_parent"
+
+android layout_height="match_parent"
+ android: paddingBottom="@dimen/activity_vertical_margin"
+android: paddingBottom="@dimen/activity_horizontal_margin"
+tools. context ManActivity">
+
+<TextView
+
+android:id="@+id/textView!" 
+android:layout width="wrap_content"
+
+android:layout_height="wrap_content"
+
+android:layout alignParentLeft=true" 
+android:layout_alignParentTop="true" 
+android:layout_marginLeft="17dp" 
+android:layout_marginTop="20dp"
+
+android:text= "7">
+
+<TextView
+
+android id="@+id/textView2"
+
+android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+android layout_alignRight="@+textView!" android:layout_below "@+id/textView!"
+
+android:layout_marginTop="18dp" android:text="Subject">
+
+<TextView
+
+android id="@+id/textView3"
+ android: layout width="wrap_content" 
+android:layout height_content" 
+android:layout below="@+id/textView2" 
+android:layout marginTop="20dp" 
+android:layout toLeftOf="@+id/button/" 
+android:text= "Message">
+
+
+<EditText
+
+android:id="@+id/editText3"
+
+android:layout_width="wrap_content"
+
+android:layout_height="wrap_content" 
+android:layout_above="@+id/textView3"
+
+android:layout_alignLeft="@+id/edit Text2" 
+android:ems="10"/>
+
+<EditText
+
+android:id="@+id/editText"
+android:layout_width="wrap_content"
+android:layout_alignLeft="@+id/editText 2"
+
+android:ems="10">
+
+<Button
+
+android:id="@+id/button!"
+
+android:layout_width="wrap_content" android:layout_height="wrap_content"
+
+android:layout_alignLeft="@+id/editText3" 
+android:layout_below="@+id/textView3"
+
+android:layout_marginTop="74dp"
+
+android:text="Send"/>
+
+EditText
+
+android id="@+id/editText2" android layout_width="wrap_content"
+
+android:layout_height="wrap_content" 
+android:layout_alignBaseline="@+id/textView2"
+
+android:layout_alignBottom="@+id/textView2"
+
+android:layout_alignParentRight="true" 
+android:ems="10">
+
+<requestFocus/>
+
+</EditText>
+
+</RelativeLayout>
+
+MainActivity.java
+
+ckage com.mobilelab.email;
+
+import android.app.Activity, Sport android.content.Intent,
+
+import android.os.Bundle,
+
+import android view View,
+
+import android.widget.Button,
+
+import android.widget. EditText,
+
+public class MainActivity extends Activity {
+
+EditText etTo, etSub, etMsg;
+@Override
+
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState),
+
+setContentView(R.layout.activity_main);
+
+etTo= (EditText) findViewById(R.id.editText I),
+
+etSub = (EditText) findViewById(R.id.edu Text2),
+etMsg = (EditText) findViewById(R.id.editText 3),
+
+btSend= (Button) findViewById(R.id.button!),
+
+btSend.setOnClickListener(new View.OnClickListener() {
+
+@Override
+public void onClick(View view) {
+
+to etTo.getText().toString),
+subject=etSub getText().toString,
+message=etMsg.getText().toString0,
+
+Intent email new Intent(Intent.ACTION SEND),
+email.putExtra(Intent.EXTRA_EMAIL, new String[]{to});
+email putExtra(Intent EXTRA_SUBJECT, subject),
+enail.putExtra(Intent.EXTRA_TEXT, message),
+
+//need this to prompts email client only
+email.setType("message/rfc822");
+
+startActivity (Intent.createChooser (email, "Choose Email client:"));
+        }
+   });
+ }
+}
